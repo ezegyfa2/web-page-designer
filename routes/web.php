@@ -26,5 +26,10 @@ Route::get('/', function () {
     return view('layouts/dynamicPage');
 });
 HttpMethods::registerDesignerRoute();
+Route::post('/copy-component', function() {
+    return response()->json([
+        'message' => 'success',
+    ]);
+});
 $blueAdminController = new BlueAdminController();
 $blueAdminController->initializeRoutes();
