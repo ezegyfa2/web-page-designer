@@ -6,22 +6,25 @@ return [
 
     'admin' => [
         'users' => [
-            'url' => 'users',
             'renderColumnNames' => [
                 'name',
             ]
         ],
         'orders' => [
-            'url' => 'orders',
             'renderColumnNames' => [
                 'user_id',
                 'product_detail_id',
             ]
         ],
         'product_details' => [
-            'url' => 'product-details',
             'renderColumnNames' => [
                 'name',
+            ]
+        ],
+        'product_types' => [
+            'renderColumnNames' => [
+                'name',
+                'test'
             ]
         ]
     ],
