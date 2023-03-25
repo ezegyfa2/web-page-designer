@@ -20,6 +20,7 @@
         "bootstrap": "^4.6.0",
         "bootstrap-select": "^1.13.18",
         "dynamic-web-vue-components": "^1.0.1",
+        "ecom-vue-components": "^1.0.0",
         "jquery": "^3.6.1",
         "jquery.redirect": "^1.2.0",
         "just-clone": "^6.1.1",
