@@ -20,22 +20,6 @@ use Ezegyfa\LaravelHelperMethods\Database\FormGenerating\DatabaseInfos;
 Route::get('/', function () {
 
     return view('developmentTest');
-    $blueAdminController = new BlueAdminController();
-    $blueAdminController->initializeRoutes();
-    //HelperTableMethods::createHelperTable(['product_details', 'laptops', 'pcs'], 'test');
     return view('layouts/dynamicPage');
 });
 DesignerMethods::registerDesignerRoute();
-$blueAdminController = new BlueAdminController();
-$blueAdminController->initializeRoutes();
-
-Route::get('designer/test-template', function() {
-    try {
-        return DesignerMethods::getTemplateDynamicPage('blue-admin-index', );
-    }
-    catch (\Exception $e) {
-        return response()->json([
-            'message' => $e->getMessage(),
-        ]);
-    }
-});
